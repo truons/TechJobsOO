@@ -52,8 +52,6 @@ namespace TechJobs.Data
             }
 
             return theField;
-
         }
-
     }
 }
