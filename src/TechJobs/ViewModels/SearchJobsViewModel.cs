@@ -21,11 +21,11 @@ namespace TechJobs.ViewModels
         public string Value { get; set; } = "";
         public string Title { get; set; }
 
-        /*// All columns, for display
+        // All columns, for display
         public List<JobFieldType> Columns { get; set; }
 
         // View title
-        public string Title { get; set; } = "";
+        //public string Title { get; set; } = "";
 
         public SearchJobsViewModel()
         {
@@ -36,7 +36,8 @@ namespace TechJobs.ViewModels
             foreach (JobFieldType enumVal in Enum.GetValues(typeof(JobFieldType)))
             {
                 Columns.Add(enumVal);
-            }*/
+            }
+        }
     }
 }
 

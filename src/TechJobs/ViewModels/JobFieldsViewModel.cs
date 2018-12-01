@@ -6,7 +6,7 @@ namespace TechJobs.ViewModels
 {
     public class JobFieldsViewModel : BaseViewModel
     {
-        internal string Title;
+        public string Title { get; set; }
 
         // TODO #7.2 - Extract members common to SearchJobsViewModel
         // to BaseViewModel
@@ -18,10 +18,10 @@ namespace TechJobs.ViewModels
         public IEnumerable<JobField> Fields { get; set; }
 
         // All columns, for display
-        /*public List<JobFieldType> Columns { get; set; }
+        public List<JobFieldType> Columns { get; set; }
 
         // View title
-        public string Title { get; set; } = "";
+        //public string Title { get; set; } = "";
 
         public JobFieldsViewModel()
         {
@@ -32,7 +32,7 @@ namespace TechJobs.ViewModels
             foreach (JobFieldType enumVal in Enum.GetValues(typeof(JobFieldType)))
             {
                 Columns.Add(enumVal);
-            }*/
+            }
+        }
     }
 }
-
