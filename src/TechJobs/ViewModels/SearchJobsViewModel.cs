@@ -14,15 +14,15 @@ namespace TechJobs.ViewModels
         public List<Job> Jobs { get; set; }
 
         // The column to search, defaults to all
-        public JobFieldType Column { get; set; } = JobFieldType.All;
+        public new JobFieldType Column { get; set; } = JobFieldType.All;
 
         // The search value
         [Display(Name = "Keyword:")]
         public string Value { get; set; } = "";
-        public string Title { get; set; }
+        public new string Title { get; set; }
 
         // All columns, for display
-        public List<JobFieldType> Columns { get; set; }
+        public new List<JobFieldType> Columns { get; set; }
 
         // View title
         //public string Title { get; set; } = "";
